@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout - Gaming Retailer</title>
+  <link rel="stylesheet" href="./style2.css">
+  <link rel="icon" type="image/x-icon" href="./image/favicon.ico">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="logo">
+      <img src="./image/70.png" class="logo">
+      <link rel="icon" type="image/x-icon" href="./image/favicon.ico">
+    </div>
+    
+    <!-- Hamburger Icon   (Checkbox) -->
+    <input type="checkbox" id="menu-toggle"class="menu-toggle">
+    <label for="menu-toggle" class="hamburger">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </label>
+
+    <!-- Navigation Links -->
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="upcoming.html">Upcoming Games</a></li>
+      <li><a href="consoles.html">Consoles</a></li>
+      <li><a href="perhiphe.html">Peripherals</a></li>
+      <li><a href="gammes.html">Games</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="checkout.html">Check</a></li>
+      <li><a href="Querise.html">Q & FAQ</a></li>
+    </ul>
+  </nav>
+
+  <main class="checkout-container">
+    <h1>Checkout</h1>
+    
+    <section class="order-summary">
+      <h2>Your Order</h2>
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th>Quantity</th>
+              <th>Price</th>
+              <th>Total</th>
+            </tr>
+          </thead>
+          <tbody id="order-summary">
+            <!-- Items will be populated by JavaScript -->
+          </tbody>
+        </table>
+      </div>
+      <h3 class="total-amount">Total: <span id="total-amount">$0.00</span></h3>
+    </section>
+
+    <section class="checkout-form">
+      <h2>Enter Your Details</h2>
+      <form id="checkout-form">
+        <div class="form-group">
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="address">Address:</label>
+          <textarea id="address" rows="3" required></textarea>
+        </div>
+        
+        <div class="form-group">
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="payment-method">Payment Method:</label>
+          <select id="payment-method" required>
+            <option value="">Select payment method</option>
+            <option value="credit-card">Credit Card</option>
+            <option value="paypal">PayPal</option>
+            <option value="cash-on-delivery">Cash on Delivery</option>
+          </select>
+        </div>
+        
+        <button type="submit" id="submit" class="submit-btn">pay</button>
+      </form>
+    </section>
+  </main>
+  
+  <footer class="footer">
+        
+    <p><u>&copy; 2024 Gaming Retailer</u></p>
+      <div>
+  
+      <div class="footer-section">
+        <div class="footer-img">
+    
+        <img src="./image/1512165.jpg" class="footer-img"></div>
+        
+        <div class="box">Follow us </div>
+      <div class="box">service </div>
+      <div class="box">contact us</div>
+      <div class="box">Need help</div>
+
+          <div class="footer-icons">
+              <div class="circle">
+                  <img src="./image/OIP.jpeg" ></div>
+                  <div class="circle">
+                    <img src="./image/OIP (1).jpeg "></div>
+                    <div class="circle">
+                      <img src="./image/twiter.jpeg"></div>
+                    <div class="circle">
+                      <img src="./image/wp.jpg"></div>
+                    </div>
+                    </div>
+    </footer>
+
+  <script src="checkout.js"></script>
+</body>
+</html>

@@ -1,0 +1,358 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>responsive Mobile Navigation</title>
+  <link rel="stylesheet" href="./style2.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="logo">
+        <img src="./image/70.png" class="logo">
+      <link rel="icon" type="image/x-icon" href="./image/favicon.ico">
+    </div>
+    
+    <!-- Hamburger Icon   (Checkbox) -->
+    <input type="checkbox" id="menu-toggle"class="menu-toggle">
+    <label for="menu-toggle" class="hamburger">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </label>
+
+    <!-- Navigation Links -->
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="upcoming.html">Upcoming Games</a></li>
+      <li><a href="consoles.html">Consoles</a></li>
+      <li><a href="perhiphe.html">Peripherals</a></li>
+      <li><a href="gammes.html">Games</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="checkout.html">Check</a></li>
+      <li><a href="Querise.html">Q & FAQ</a></li>
+    </ul>
+  </nav>
+
+
+   <main>
+   
+   <h1>Order Your Computer Parts</h1>
+    
+    <!---section1-->
+
+<div class="product-section">
+    <h2>Processors</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="./image/pro 1.jpeg" width="100" height="150" alt="Intel i5 12400">
+        <p class="product-title">Intel i5 12400</p>
+        <p class="product-price">$250</p>
+        <input type="number" min="1" value="1" class="quantity-input" id="qty-1">
+        <button onclick="addToCart(1, 'processors', document.getElementById('qty-1').value)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="./image/pro 1.jpeg" width="100" height="150" alt="AMD Ryzen 5 5600X">
+        <p class="product-title">AMD Ryzen 5 5600X</p>
+        <p class="product-price">$280</p>
+        <input type="number" min="1" value="1" class="quantity-input" id="qty-2">
+        <button onclick="addToCart(2, 'processors', document.getElementById('qty-2').value)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="./image/pro 1.jpeg" width="100" height="150" alt="Intel i7 13700K">
+        <p class="product-title">Intel i7 13700K</p>
+        <p class="product-price">$400</p>
+        <input type="number" min="1" value="1" class="quantity-input" id="qty-3">
+        <button onclick="addToCart(3, 'processors', document.getElementById('qty-3').value)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="./image/pro 1.jpeg" width="100" height="150" alt="AMD Ryzen 7 7700X">
+        <p class="product-title">AMD Ryzen 7 7700X</p>
+        <p class="product-price">$450</p>
+        <input type="number" min="1" value="1" class="quantity-input" id="qty-4">
+        <button onclick="addToCart(4, 'processors', document.getElementById('qty-4').value)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="./image/pro 1.jpeg" width="100" height="150" alt="Intel i9 13900K">
+        <p class="product-title">Intel i9 13900K</p>
+        <p class="product-price">$600</p>
+        <input type="number" min="1" value="1" class="quantity-input" id="qty-5">
+        <button onclick="addToCart(5, 'processors', document.getElementById('qty-5').value)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="./image/pro 1.jpeg" width="100" height="150" alt="AMD Ryzen 9 7950X">
+        <p class="product-title">AMD Ryzen 9 7950X</p>
+        <p class="product-price">$700</p>
+        <input type="number" min="1" value="1" class="quantity-input" id="qty-6">
+        <button onclick="addToCart(6, 'processors', document.getElementById('qty-6').value)">Add to Cart</button>
+      </div>
+    
+    
+        
+
+    </div>
+    <!--section2-->
+    <div>
+        <!-- Graphics Cards -->
+    <h2>Graphic Cards</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="./image/graphic 1.webp" width="100" height="150" alt="RTX 3060">
+        <p class="product-title">RTX 3060</p>
+        <p class="product-price">$400</p>
+        <input type="number" min="1" value="1" class="quantity-input" id="qty-7">
+        <button onclick="addToCart(7, 'graphicCards', document.getElementById('qty-7').value)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="./image/graphic 2.webp" width="100" height="150" alt="RTX 3070">
+        <p class="product-title">RTX 3070</p>
+        <p class="product-price">$600</p>
+        <input type="number" min="1" value="1" class="quantity-input" id="qty-8">
+        <button onclick="addToCart(8, 'graphicCards', document.getElementById('qty-8').value)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="./image/graphic 3.webp" width="100" height="150" alt="AMD RX 6700 XT">
+        <p class="product-title">AMD RX 6700 XT</p>
+        <p class="product-price">$500</p>
+        <input type="number" min="1" value="1" class="quantity-input" id="qty-9">
+        <button onclick="addToCart(9, 'graphicCards', document.getElementById('qty-9').value)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="./image/graphic 4.webp" width="100" height="150" alt="NVIDIA RTX 3080">
+        <p class="product-title">NVIDIA RTX 3080</p>
+        <p class="product-price">$800</p>
+        <input type="number" min="1" value="1" class="quantity-input" id="qty-10">
+        <button onclick="addToCart(10, 'graphicCards', document.getElementById('qty-10').value)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="./image/graphic 5.webp" width="100" height="150" alt="AMD RX 6800 XT">
+        <p class="product-title">AMD RX 6800 XT</p>
+        <p class="product-price">$700</p>
+        <input type="number" min="1" value="1" class="quantity-input" id="qty-11">
+        <button onclick="addToCart(11, 'graphicCards', document.getElementById('qty-11').value)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="./image/graphic 6.jpeg" width="100" height="150" alt="NVIDIA RTX 3090">
+        <p class="product-title">NVIDIA RTX 3090</p>
+        <p class="product-price">$1200</p>
+        <input type="number" min="1" value="1" class="quantity-input" id="qty-12">
+        <button onclick="addToCart(12, 'graphicCards', document.getElementById('qty-12').value)">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+  
+
+  <!--section 3-->
+
+  <!-- Motherboards -->
+  <div class="product-section">
+    <h2>Motherboards</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="./image/mother 1.jpg" width="100" height="150" alt="B550">
+        <p class="product-title">B550</p>
+        <p class="product-price">$150</p>
+        <input type="number" min="1" value="1" class="quantity-input" id="qty-13">
+        <button onclick="addToCart(13, 'motherboards', document.getElementById('qty-13').value)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="./image/mother 3.jpg" width="100" height="150" alt="MSI B450">
+        <p class="product-title">MSI B450</p>
+        <p class="product-price">$120</p>
+        <input type="number" min="1" value="1" class="quantity-input" id="qty-14">
+        <button onclick="addToCart(14, 'motherboards', document.getElementById('qty-14').value)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="./image/mother 3.jpg" width="100" height="150" alt="Gigabyte X570">
+        <p class="product-title">Gigabyte X570</p>
+        <p class="product-price">$250</p>
+        <input type="number" min="1" value="1" class="quantity-input" id="qty-15">
+        <button onclick="addToCart(15, 'motherboards', document.getElementById('qty-15').value)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="./image/mother 1.jpg" width="100" height="150" alt="ASRock B560">
+        <p class="product-title">ASRock B560</p>
+        <p class="product-price">$180</p>
+        <input type="number" min="1" value="1" class="quantity-input" id="qty-16">
+        <button onclick="addToCart(16, 'motherboards', document.getElementById('qty-16').value)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="./image/mother 5.jpg" width="100" height="150" alt="ASUS Z690">
+        <p class="product-title">ASUS Z690</p>
+        <p class="product-price">$300</p>
+        <input type="number" min="1" value="1" class="quantity-input" id="qty-17">
+        <button onclick="addToCart(17, 'motherboards', document.getElementById('qty-17').value)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="./image/mother 6.jpg" width="100" height="150" alt="MSI MEG X570">
+        <p class="product-title">MSI MEG X570</p>
+        <p class="product-price">$350</p>
+        <input type="number" min="1" value="1" class="quantity-input" id="qty-18">
+        <button onclick="addToCart(18, 'motherboards', document.getElementById('qty-18').value)">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+  
+
+  <!--section 4-->
+
+  <!-- Memory -->
+  <div class="product-section">
+    <h2>Memory (RAM)</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="./image/16gb.jpeg" width="100" height="150" alt="Corsair 16GB DDR4">
+        <p class="product-title">Corsair 16GB DDR4</p>
+        <p class="product-price">$80</p>
+        <input type="number" min="1" value="1" class="quantity-input" id="qty-19">
+        <button onclick="addToCart(19, 'memory', document.getElementById('qty-19').value)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="./image/32GB RAM.jpeg" width="100" height="150" alt="G.Skill 32GB DDR4">
+        <p class="product-title">G.Skill 32GB DDR4</p>
+        <p class="product-price">$150</p>
+        <input type="number" min="1" value="1" class="quantity-input" id="qty-20">
+        <button onclick="addToCart(20, 'memory', document.getElementById('qty-20').value)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="./image/8gb.jpeg" width="100" height="150" alt="Kingston 8GB DDR5">
+        <p class="product-title">Kingston 8GB DDR5</p>
+        <p class="product-price">$120</p>
+        <input type="number" min="1" value="1" class="quantity-input" id="qty-21">
+        <button onclick="addToCart(21, 'memory', document.getElementById('qty-21').value)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="./image/4GB.jpeg" width="100" height="150" alt="Crucial 4GB DDR5">
+        <p class="product-title">Crucial 4GB DDR5</p>
+        <p class="product-price">$200</p>
+        <input type="number" min="1" value="1" class="quantity-input" id="qty-22">
+        <button onclick="addToCart(22, 'memory', document.getElementById('qty-22').value)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="./image/4GB.jpeg" width="100" height="150" alt="Crucial 4GB DDR5">
+        <p class="product-title">Crucial 4GB DDR5</p>
+        <p class="product-price">$200</p>
+        <input type="number" min="1" value="1" class="quantity-input" id="qty-22">
+        <button onclick="addToCart(23,'memory', document.getElementById('qty-22').value)">Add to Cart</button>
+
+    </div>
+    <div class="product-card">
+        <img src="./image/4GB.jpeg" width="100" height="150" alt="Crucial 4GB DDR5">
+        <p class="product-title">Crucial 4GB DDR5</p>
+        <p class="product-price">$200</p>
+        <input type="number" min="1" value="1" class="quantity-input" id="qty-22">
+        <button onclick="addToCart(24, 'memory', document.getElementById('qty-22').value)">Add to Cart</button>
+  </div>
+  </div>
+  </div>
+  <!--section 5-->
+
+  <!-- Storage Devices -->
+  <div class="product-section">
+    <h2>Storage Devices</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="./image/st1.jpeg" width="100" height="150" alt="Samsung 1TB SSD"><br>
+        <p class="product-title">Samsung 1TB SSD</p><br>
+        <p class="product-price">$120</p>
+        <input type="number" min="1" value="1" class="quantity-input" id="qty-23">
+        <button onclick="addToCart(23, 'storage', document.getElementById('qty-23').value)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="./image/st2.jpeg" width="100" height="150" alt="WD 2TB HDD">
+        <p class="product-title">WD 2TB HDD</p>
+        <p class="product-price">$80</p><br>
+        <input type="number" min="1" value="1" class="quantity-input" id="qty-24">
+        <button onclick="addToCart(24, 'storage', document.getElementById('qty-24').value)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="./image/st2.jpeg" width="100" height="150" alt="Seagate 4TB HDD">
+        <p class="product-title">Seagate 4TB HDD</p> 
+        <p class="product-price">$150</p>
+        <input type="number" min="1" value="1" class="quantity-input" id="qty-25">
+        <button onclick="addToCart(25, 'storage', document.getElementById('qty-25').value)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="./image/st7.jpeg" width="100" height="150" alt="Kingston 500GB SSD">
+        <p class="product-title">Kingston 500GB SSD</p>
+        <p class="product-price">$70</p>
+        <input type="number" min="1" value="1" class="quantity-input" id="qty-26">
+        <button onclick="addToCart(26, 'storage', document.getElementById('qty-26').value)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="./image/st1.jpeg" width="100" height="150" alt="Crucial 2TB NVMe">
+        <p class="product-title">Crucial 2TB NVMe</p>
+        <p class="product-price">$250</p>
+        <input type="number" min="1" value="1" class="quantity-input" id="qty-27">
+        <button onclick="addToCart(27, 'storage', document.getElementById('qty-27').value)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="./image/st2.jpeg" width="100" height="150" alt="Samsung 4TB NVMe">
+        <p class="product-title">Samsung 4TB NVMe</p>
+        <p class="product-price">$450</p>
+        <input type="number" min="1" value="1" class="quantity-input" id="qty-28">
+        <button onclick="addToCart(28, 'storage', document.getElementById('qty-28').value)">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+
+ 
+<!--section6-->
+
+    <h2>Cart</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Quantity</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody id="cart-body">
+        </tbody>
+    </table>
+
+    <h3>Total: <span id="total-price">total:$0</h3>
+    
+
+    <button id="save-fav" >Add to Favourites</button>
+    <button id="load-fav" >Apply Favourites</button>
+    <button id="buy-now" >Buy Now</button>
+    
+    <script src="./script.js"></script>
+
+</main>
+
+<footer class="footer">
+        
+        <p><u>&copy; 2024 Gaming Retailer</u></p>
+          <div>
+      
+          <div class="footer-section">
+            <div class="footer-img">
+        
+            <img src="./image/1512165.jpg" class="footer-img"></div>
+            
+            <div class="box">Follow us </div>
+          <div class="box">service </div>
+          <div class="box">contact us</div>
+          <div class="box">Need help</div>
+    
+              <div class="footer-icons">
+                  <div class="circle">
+                      <img src="./image/OIP.jpeg" ></div>
+                      <div class="circle">
+                        <img src="./image/OIP (1).jpeg "></div>
+                        <div class="circle">
+                          <img src="./image/twiter.jpeg"></div>
+                        <div class="circle">
+                          <img src="./image/wp.jpg"></div>
+                        </div>
+                        </div>
+        </footer>
+    
+  </body>
+</html>
